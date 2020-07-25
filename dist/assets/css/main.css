@@ -1,0 +1,13 @@
+body {
+  background: green;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+li {
+  list-style-type: none;
+}
+/*# sourceMappingURL=main.css.map */
