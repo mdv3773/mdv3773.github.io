@@ -19,7 +19,11 @@ nav ul {
   text-align: center;
 }
 
-li {
+nav li {
+  list-style-type: none;
+}
+
+.contacts li {
   list-style-type: none;
 }
 /*# sourceMappingURL=main.css.map */

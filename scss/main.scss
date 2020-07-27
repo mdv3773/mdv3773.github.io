@@ -17,8 +17,15 @@ nav {
         grid-template-columns: repeat(4, 1fr);
         text-align: center;
     }
+
+    li {
+        list-style-type: none;
+    }
 }
 
-li {
-    list-style-type: none;
+.contacts {
+
+    li {
+        list-style-type: none;
+    }
 }
