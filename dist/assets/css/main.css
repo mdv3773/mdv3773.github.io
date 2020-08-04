@@ -1,6 +1,14 @@
+.m-auto {
+  margin: auto;
+}
+
 body {
-  background: green;
+  background: url(/dist/assets/img/Falls.jpg);
+  background-size: 100vw;
+  background-attachment: fixed;
   margin: 0;
+  overflow-x: hidden;
+  font-family: 'Mulish', sans-serif;
 }
 
 header {
@@ -9,7 +17,12 @@ header {
   width: 100vw;
 }
 
-nav ul {
+nav {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .menu-nav {
   padding: 0;
   margin: 0;
   display: -ms-grid;
@@ -19,11 +32,121 @@ nav ul {
   text-align: center;
 }
 
-nav li {
+nav .menu-nav-item {
+  background-color: white;
+  list-style: none;
+}
+
+nav .menu-nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+nav .menu-nav-link:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+footer {
+  text-align: center;
+}
+
+#main section {
+  background: rgba(255, 255, 255, 0.8);
+  margin: 50px auto auto auto;
+  max-width: 50vw;
+  text-align: center;
+  display: block;
+}
+
+#main .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main .hero h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+#main .hero img {
+  width: 6rem;
+}
+
+#main .occupation {
+  background: rgba(255, 255, 255, 0.8);
+  margin: 50px auto auto auto;
+  max-width: 50vw;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main .contacts {
+  background: rgba(255, 255, 255, 0.8);
+  margin: 50px auto auto auto;
+  max-width: 50vw;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: start;
+}
+
+#main .contacts ul {
+  padding: 0;
+}
+
+#main .contacts li {
   list-style-type: none;
 }
 
-.contacts li {
-  list-style-type: none;
+#main .education img {
+  width: 6rem;
+  position: relative;
+}
+
+#main .education #l-branch {
+  bottom: 0px;
+  left: 0px;
+  -webkit-transform: rotate(75deg);
+          transform: rotate(75deg);
+}
+
+#main .education #r-branch {
+  bottom: 0px;
+  right: 0px;
+  -webkit-transform: rotate(100deg) scaleY(-1);
+          transform: rotate(100deg) scaleY(-1);
+}
+
+#research article {
+  background: #8af5ae;
+  margin: 50px auto auto auto;
+  max-width: 50vw;
+  text-align: center;
+  display: block;
+}
+
+#scientific-writing article {
+  background: #fff;
+  margin: 50px auto auto auto;
+  max-width: 50vw;
+  text-align: center;
+  display: block;
+}
+
+#teaching article {
+  background: rgba(212, 185, 255, 0.8);
+  margin: 50px auto auto auto;
+  max-width: 50vw;
+  text-align: center;
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

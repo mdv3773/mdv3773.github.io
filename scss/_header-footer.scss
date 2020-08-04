@@ -1,0 +1,40 @@
+@mixin transition-ease {
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    position: sticky;
+    width: 100vw;
+}
+
+nav {
+
+    @include transition-ease;
+
+    .menu-nav {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+
+        &-item {
+            background-color: white;
+            list-style: none;
+        }
+
+        &-link {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                @include transition-ease;
+                color: white;
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+}

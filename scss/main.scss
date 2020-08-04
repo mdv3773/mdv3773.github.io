@@ -1,31 +1,84 @@
-body {
-    background: green;
-    margin: 0;
-}
+@import "./common";
+@import "./variables";
+@import "./header-footer";
 
-header {
-    position: sticky;
-    width: 100vw;
-}
 
-nav {
+#main {
 
-    ul {
-        padding: 0;
-        margin: 0;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        text-align: center;
+    section {
+        @include boxed($main-bg, block);
     }
 
-    li {
-        list-style-type: none;
+    .hero {
+
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 400;
+        }
+
+        img {
+            width: 6rem;
+        }
+    }
+
+    .occupation {
+        @include boxed($main-bg, flex);
+    }
+
+    .contacts {
+        @include boxed($main-bg, flex);
+        text-align: start;
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    .education {
+
+        img {
+            width: 6rem;
+            position: relative;
+        }
+
+        #l-branch {
+            bottom: 0px;
+            left: 0px;
+            transform: rotate(75deg);
+        }
+
+        #r-branch {
+            bottom: 0px;
+            right: 0px;
+            transform: rotate(100deg) scaleY(-1);
+        }
     }
 }
 
-.contacts {
+#research {
 
-    li {
-        list-style-type: none;
+    article {
+        @include boxed($research-bg, block);
+    }
+}
+
+#scientific-writing {
+
+    article {
+        @include boxed($scientific-bg, block);
+    }
+}
+
+#teaching {
+
+    article {
+        @include boxed($teaching-bg, block);
     }
 }
