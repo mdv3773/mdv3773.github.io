@@ -15,6 +15,10 @@ body {
   font-family: 'Mulish', sans-serif;
 }
 
+main {
+  margin-top: 5rem;
+}
+
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -24,6 +28,9 @@ header {
 nav {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  width: inherit;
 }
 
 nav .menu-nav {
@@ -31,25 +38,27 @@ nav .menu-nav {
   margin: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
+  -ms-grid-columns: (1fr)4;
       grid-template-columns: repeat(4, 1fr);
   text-align: center;
 }
 
 nav .menu-nav-item {
-  background-color: white;
+  background-color: #498640;
   list-style: none;
+  padding: 0.5rem;
+  border: 1px solid black;
 }
 
 nav .menu-nav-link {
   text-decoration: none;
-  color: black;
+  color: #0e1d0c;
 }
 
 nav .menu-nav-link:hover {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  color: white;
+  color: #8bc285;
 }
 
 footer {

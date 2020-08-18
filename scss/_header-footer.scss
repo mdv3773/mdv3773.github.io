@@ -10,6 +10,9 @@ header {
 nav {
 
     @include transition-ease;
+    position: fixed;
+    top: 0;
+    width: inherit;
 
     .menu-nav {
         padding: 0;
@@ -19,17 +22,19 @@ nav {
         text-align: center;
 
         &-item {
-            background-color: white;
+            background-color: #498640;
             list-style: none;
+            padding: 0.5rem;
+            border: 1px solid black;
         }
 
         &-link {
             text-decoration: none;
-            color: black;
+            color: #0e1d0c;
 
             &:hover {
                 @include transition-ease;
-                color: white;
+                color: #8bc285;
             }
         }
     }
