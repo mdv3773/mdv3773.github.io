@@ -61,20 +61,24 @@ html {
 
     .education {
 
+        h4 {
+            text-decoration: underline;
+        }
+
         img {
             width: 6rem;
             position: relative;
         }
 
         #l-branch {
-            bottom: 0px;
-            left: 0px;
+            bottom: 85px;
+            left: -145px;
             transform: rotate(75deg);
         }
 
         #r-branch {
-            bottom: 0px;
-            right: 0px;
+            bottom: 85px;
+            right: -145px;
             transform: rotate(100deg) scaleY(-1);
         }
     }

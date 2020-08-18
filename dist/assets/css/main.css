@@ -31,7 +31,7 @@ nav .menu-nav {
   margin: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)4;
+  -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   text-align: center;
 }
@@ -124,21 +124,25 @@ html {
   margin-left: 1rem;
 }
 
+#main .education h4 {
+  text-decoration: underline;
+}
+
 #main .education img {
   width: 6rem;
   position: relative;
 }
 
 #main .education #l-branch {
-  bottom: 0px;
-  left: 0px;
+  bottom: 85px;
+  left: -145px;
   -webkit-transform: rotate(75deg);
           transform: rotate(75deg);
 }
 
 #main .education #r-branch {
-  bottom: 0px;
-  right: 0px;
+  bottom: 85px;
+  right: -145px;
   -webkit-transform: rotate(100deg) scaleY(-1);
           transform: rotate(100deg) scaleY(-1);
 }
