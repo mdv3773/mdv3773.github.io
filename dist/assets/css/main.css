@@ -17,6 +17,7 @@ body {
 
 main {
   margin-top: 5rem;
+  margin-bottom: 40px;
 }
 
 header {
@@ -75,6 +76,7 @@ html {
   max-width: 50vw;
   text-align: center;
   display: block;
+  border-radius: 10px;
 }
 
 #main .hero {
@@ -156,12 +158,21 @@ html {
           transform: rotate(100deg) scaleY(-1);
 }
 
+#research h1 {
+  text-decoration: underline;
+}
+
 #research article {
   background: #8af5ae;
   margin: 50px auto auto auto;
   max-width: 50vw;
   text-align: center;
   display: block;
+  border-radius: 10px;
+}
+
+#scientific-writing h1 {
+  text-decoration: underline;
 }
 
 #scientific-writing article {
@@ -170,6 +181,11 @@ html {
   max-width: 50vw;
   text-align: center;
   display: block;
+  border-radius: 10px;
+}
+
+#teaching h1 {
+  text-decoration: underline;
 }
 
 #teaching article {
@@ -178,5 +194,6 @@ html {
   max-width: 50vw;
   text-align: center;
   display: block;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -86,6 +86,10 @@ html {
 
 #research {
 
+    h1 {
+        text-decoration: underline;
+    }
+
     article {
         @include boxed($research-bg, block);
     }
@@ -93,12 +97,20 @@ html {
 
 #scientific-writing {
 
+    h1 {
+        text-decoration: underline;
+    }
+
     article {
         @include boxed($scientific-bg, block);
     }
 }
 
 #teaching {
+
+    h1 {
+        text-decoration: underline;
+    }
 
     article {
         @include boxed($teaching-bg, block);
