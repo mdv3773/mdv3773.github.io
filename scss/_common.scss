@@ -7,12 +7,25 @@
     border-radius: 10px;
 }
 
+@mixin transition-ease {
+    transition: all ease-in-out;
+}
+
+.d-flex {
+    display: flex;
+}
+
 .m-auto {
     margin: auto;
 }
 
 .w-62 {
     width: 62%;
+}
+
+.mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 

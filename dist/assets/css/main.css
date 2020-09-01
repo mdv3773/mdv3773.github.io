@@ -1,9 +1,20 @@
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .m-auto {
   margin: auto;
 }
 
 .w-62 {
   width: 62%;
+}
+
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 body {
@@ -70,13 +81,22 @@ html {
   font-size: 20px;
 }
 
-#main section {
+#main article {
   background: rgba(255, 255, 255, 0.8);
   margin: 50px auto auto auto;
   max-width: 50vw;
   text-align: center;
   display: block;
   border-radius: 10px;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#main article.loaded {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 #main .hero {
@@ -169,6 +189,33 @@ html {
   text-align: center;
   display: block;
   border-radius: 10px;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#research article.loaded {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+#research article.presentations p {
+  margin-left: 1rem;
+}
+
+#research article.presentations img {
+  height: 8rem;
+}
+
+#research article.sacc p {
+  text-align: justify;
+  margin: 0 1rem 0 2rem;
+  padding-bottom: 2rem;
+}
+
+#research article.sacc img {
+  height: 10rem;
 }
 
 #scientific-writing h1 {
@@ -182,6 +229,15 @@ html {
   text-align: center;
   display: block;
   border-radius: 10px;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#scientific-writing article.loaded {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 #teaching h1 {
@@ -195,5 +251,14 @@ html {
   text-align: center;
   display: block;
   border-radius: 10px;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#teaching article.loaded {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 /*# sourceMappingURL=main.css.map */
