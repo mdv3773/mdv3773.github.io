@@ -1,10 +1,10 @@
 let articles = document.querySelectorAll("article");
-let articleLength = document.querySelectorAll("article").length;
 
-for (let i = 0; i < articleLength; i++)
-{
-    setTimeout(function ()
-    {
-        articles[i].classList.add("loaded");
-    }, 500);
-}
+let i = 0;
+let handler = setInterval(function () {
+    articles[i].classList.add("loaded");
+    i++;
+    if (i === articles.length) {
+        clearInterval(handler);
+    }
+}, 300);
