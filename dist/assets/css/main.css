@@ -261,4 +261,16 @@ html {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
+
+@media screen and (max-width: 768px) {
+  #main article {
+    max-width: 100vw;
+  }
+  #main .hero h1 {
+    font-size: 2rem;
+  }
+  #main .hero img {
+    width: 5rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */

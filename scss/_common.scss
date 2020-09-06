@@ -42,3 +42,22 @@ main {
     margin-top: 5rem;
     margin-bottom: 40px;
 }
+
+
+@mixin media-sm {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (max-width: 1600px) {
+        @content;
+    }
+}

@@ -1,0 +1,29 @@
+@include media-sm {
+    
+    #main {
+
+        article {
+            max-width: 100vw;
+        }
+
+        .hero {
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            img {
+                width: 5rem;
+            }
+        }
+    }
+}
+
+@include media-md {
+    //all content to change goes in here
+}
+
+
+@include media-lg {
+    //all content to change goes in here
+}
