@@ -19,10 +19,6 @@
     margin: auto;
 }
 
-.w-62 {
-    width: 62%;
-}
-
 .mx-1 {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -41,13 +37,6 @@ body {
 main {
     margin-top: 5rem;
     margin-bottom: 40px;
-}
-
-
-@mixin media-sm {
-    @media screen and (max-width: 768px) {
-        @content;
-    }
 }
 
 @mixin media-md {

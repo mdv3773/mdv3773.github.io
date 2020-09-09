@@ -1,5 +1,40 @@
-@include media-sm {
+//Lg screen must go first due to desktop first design
+
+@include media-lg {
     
+    #main {
+
+        article {
+            max-width: 75vw;
+        }
+
+        .hero {
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            img {
+                width: 5rem;
+            }
+        }
+
+        .occupation {
+            display: block;
+        }
+
+        .background {
+            width: 100%;
+        }
+
+        .contacts {
+            text-align: inherit;
+        }
+    }
+}
+
+@include media-md {
+
     #main {
 
         article {
@@ -16,14 +51,21 @@
                 width: 5rem;
             }
         }
+
+        .occupation {
+            display: block;
+        }
+
+        .background {
+            width: 100%;
+        }
+
+        .contacts {
+            text-align: inherit;
+        }
+
+        .about {
+            display: block;
+        }
     }
-}
-
-@include media-md {
-    //all content to change goes in here
-}
-
-
-@include media-lg {
-    //all content to change goes in here
 }
