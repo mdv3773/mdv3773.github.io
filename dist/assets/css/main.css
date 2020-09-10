@@ -47,7 +47,7 @@ nav .menu-nav {
   margin: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)4;
+  -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   text-align: center;
 }
@@ -143,7 +143,11 @@ html {
   display: flex;
 }
 
-#main .about img {
+#main .about .profile {
+  width: 50%;
+}
+
+#main .about .profile img {
   width: 100%;
   height: 100%;
 }
@@ -154,6 +158,7 @@ html {
       align-self: center;
   text-align: start;
   margin-left: 1rem;
+  width: 47%;
 }
 
 #main .education h4 {
@@ -216,7 +221,7 @@ html {
 }
 
 #research article.sacc img {
-  height: 10rem;
+  height: 15rem;
 }
 
 #scientific-writing h1 {
@@ -234,6 +239,10 @@ html {
           transform: translateX(-150%);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+#scientific-writing article ol {
+  text-align: left;
 }
 
 #scientific-writing article.loaded {
@@ -316,7 +325,9 @@ html {
     text-align: inherit;
   }
   #main .about {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #research article {
     max-width: 100vw;
@@ -332,6 +343,15 @@ html {
 @media screen and (max-width: 768px) {
   nav .menu-nav-item {
     font-size: 15px;
+  }
+  #main .about {
+    display: block;
+  }
+  #main .about .profile {
+    width: 100%;
+  }
+  #main .about-me {
+    width: 96%;
   }
 }
 /*# sourceMappingURL=main.css.map */

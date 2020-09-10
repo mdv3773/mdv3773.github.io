@@ -90,7 +90,7 @@
         }
 
         .about {
-            display: block;
+            display: flex;
         }
     }
 
@@ -124,6 +124,21 @@
 
             &-item {
                 font-size: 15px;
+            }
+        }
+    }
+
+    #main {
+
+        .about {
+            display: block;
+
+            .profile {
+                width: 100%;
+            }
+
+            &-me {
+                width: 96%;
             }
         }
     }
