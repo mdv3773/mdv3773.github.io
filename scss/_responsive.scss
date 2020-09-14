@@ -56,10 +56,6 @@
 
 @include media-md {
 
-    body {
-        background-size: cover;
-    }
-
     #main {
 
         article {
@@ -118,6 +114,12 @@
 
 @include media-sm {
 
+    html, body {
+        background: url(/dist/assets/img/charleston.jpg);
+        background-attachment: fixed;
+        background-size: 100vh;
+    }
+
     nav {
 
         .menu-nav {
@@ -140,6 +142,39 @@
             &-me {
                 width: 96%;
             }
+        }
+
+        .education {
+
+            #l-branch, #r-branch {
+                width: 4rem;
+                bottom: 50px;
+            }
+        }
+    }
+
+    #research {
+
+        article {
+
+            &.presentations {
+
+                .poster {
+                    display: block;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+
+            &.sacc {
+            
+                img {
+                    height: 4rem;
+                }
+            }
+
         }
     }
 }

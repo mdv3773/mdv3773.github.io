@@ -13,12 +13,17 @@
   margin-right: 1rem;
 }
 
-body {
-  background: url(/dist/assets/img/Falls.jpg);
-  background-size: 100vw;
+html, body {
+  font-size: 20px;
+  background: url(/dist/assets/img/Zion.jpg);
+  background-size: 100vw, 100vh;
   background-attachment: fixed;
-  margin: 0;
+  background-repeat: no-repeat;
   overflow-x: hidden;
+}
+
+body {
+  margin: 0;
   font-family: 'Mulish', sans-serif;
 }
 
@@ -47,7 +52,7 @@ nav .menu-nav {
   margin: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
+  -ms-grid-columns: (1fr)4;
       grid-template-columns: repeat(4, 1fr);
   text-align: center;
 }
@@ -72,10 +77,6 @@ nav .menu-nav-link:hover {
 
 footer {
   text-align: center;
-}
-
-html {
-  font-size: 20px;
 }
 
 #main article {
@@ -135,6 +136,10 @@ html {
 
 #main .contacts li {
   list-style-type: none;
+}
+
+#main .contacts li a {
+  text-decoration: none;
 }
 
 #main .about {
@@ -206,6 +211,12 @@ html {
           transform: translateX(0);
 }
 
+#research article.presentations .poster {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #research article.presentations p {
   margin-left: 1rem;
 }
@@ -222,6 +233,19 @@ html {
 
 #research article.sacc img {
   height: 15rem;
+}
+
+#research article .two-imgs {
+  width: 50%;
+}
+
+#research article .two-imgs img {
+  width: 100%;
+  height: 100%;
+}
+
+#research article #fil-growth {
+  width: 70%;
 }
 
 #scientific-writing h1 {
@@ -303,9 +327,6 @@ html {
 }
 
 @media screen and (max-width: 1024px) {
-  body {
-    background-size: cover;
-  }
   #main article {
     max-width: 100vw;
   }
@@ -341,6 +362,11 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+  html, body {
+    background: url(/dist/assets/img/charleston.jpg);
+    background-attachment: fixed;
+    background-size: 100vh;
+  }
   nav .menu-nav-item {
     font-size: 15px;
   }
@@ -352,6 +378,19 @@ html {
   }
   #main .about-me {
     width: 96%;
+  }
+  #main .education #l-branch, #main .education #r-branch {
+    width: 4rem;
+    bottom: 50px;
+  }
+  #research article.presentations .poster {
+    display: block;
+  }
+  #research article.presentations .poster p {
+    margin: 0;
+  }
+  #research article.sacc img {
+    height: 4rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

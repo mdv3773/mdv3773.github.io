@@ -24,13 +24,18 @@
     margin-right: 1rem;
 }
 
+html, body {
+    font-size: 20px;
+    background: url(/dist/assets/img/Zion.jpg);
+    background-size: 100vw, 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
 
 body {
-    background: url(/dist/assets/img/Falls.jpg);
-    background-size: 100vw;
-    background-attachment: fixed;
     margin: 0;
-    overflow-x: hidden;
     font-family: 'Mulish', sans-serif;
 }
 
