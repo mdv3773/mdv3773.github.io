@@ -120,13 +120,59 @@
         background-size: 100vh;
     }
 
-    nav {
+    .menu-btn {
+        visibility: visible;
+
+        &-burger {
+            background: #000;
+
+            &::before {
+                background: #000;
+            }
+
+            &::after {
+                background: #000;
+            }
+        }
+    }
+
+    .nav {
+        visibility: hidden;
+        width: 100vw;
+        opacity: 0.98;
+        font-size: 1.5rem;
+
+        &.open {
+            visibility: visible;
+            background: #211F1F;
+        }
 
         .menu-nav {
+            display: flex;
+            flex-flow: column wrap;
+            height: 100vh;
+            transform: translateY(-100%);
+
+            &.open {
+                transform: translateY(0);
+            }
 
             &-item {
-                font-size: 15px;
+                padding: 50px 0 50px 0;
+                transform: translateX(100vw);
+                transition: all 0.3s ease-in-out;
+
+                &.open {
+                    transform: translateX(0);
+                    transition: all 0.4s ease-in-out;
+                }
             }
+        }
+    }
+
+    @for $i from 1 through 6 {
+        .menu-nav:nth-child(#{$i}) {
+            transition-delay: ($i * 0.1s) + 0.15s;
         }
     }
 
