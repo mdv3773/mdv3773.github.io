@@ -178,6 +178,25 @@
 
     #main {
 
+        .hero {
+
+            img {
+                width: 4rem;
+                position: absolute;
+                z-index: -1;
+            }
+
+            #left-tree {
+                left: 0;
+                top: 30px;
+            }
+
+            #right-tree {
+                right: 0;
+                top: 30px;
+            }
+        }
+
         .about {
             display: block;
 
@@ -192,9 +211,18 @@
 
         .education {
 
-            #l-branch, #r-branch {
+            img {
                 width: 4rem;
-                bottom: 50px;
+            }
+
+            #l-branch {
+                left: -110px;
+                bottom: 40px;
+            }
+
+            #r-branch {
+                right: -110px;
+                bottom: 40px;
             }
         }
     }

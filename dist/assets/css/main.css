@@ -504,6 +504,19 @@ footer {
     -webkit-transition-delay: 0.75s;
             transition-delay: 0.75s;
   }
+  #main .hero img {
+    width: 4rem;
+    position: absolute;
+    z-index: -1;
+  }
+  #main .hero #left-tree {
+    left: 0;
+    top: 30px;
+  }
+  #main .hero #right-tree {
+    right: 0;
+    top: 30px;
+  }
   #main .about {
     display: block;
   }
@@ -513,9 +526,16 @@ footer {
   #main .about-me {
     width: 96%;
   }
-  #main .education #l-branch, #main .education #r-branch {
+  #main .education img {
     width: 4rem;
-    bottom: 50px;
+  }
+  #main .education #l-branch {
+    left: -110px;
+    bottom: 40px;
+  }
+  #main .education #r-branch {
+    right: -110px;
+    bottom: 40px;
   }
   #research article.presentations .poster {
     display: block;
