@@ -273,6 +273,18 @@ footer {
           transform: translateX(0);
 }
 
+#research article .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#research article .hero img {
+  width: 6rem;
+}
+
 #research article.presentations .poster {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,13 +339,25 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
-#scientific-writing article ol {
-  text-align: left;
-}
-
 #scientific-writing article.loaded {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+#scientific-writing article .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#scientific-writing article .hero img {
+  width: 6rem;
+}
+
+#scientific-writing article ol {
+  text-align: left;
 }
 
 #teaching h1 {
@@ -356,6 +380,18 @@ footer {
 #teaching article.loaded {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+#teaching article .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#teaching article .hero img {
+  width: 6rem;
 }
 
 @media screen and (max-width: 1600px) {
@@ -509,11 +545,11 @@ footer {
     position: absolute;
     z-index: -1;
   }
-  #main .hero #left-tree {
+  #main .hero #l-tree {
     left: 0;
     top: 30px;
   }
-  #main .hero #right-tree {
+  #main .hero #r-tree {
     right: 0;
     top: 30px;
   }
@@ -537,6 +573,19 @@ footer {
     right: -110px;
     bottom: 40px;
   }
+  #research article .hero img {
+    width: 4rem;
+    position: absolute;
+    z-index: -1;
+  }
+  #research article .hero #l-potion {
+    top: 30px;
+    left: 0;
+  }
+  #research article .hero #r-potion {
+    top: 30px;
+    right: 0;
+  }
   #research article.presentations .poster {
     display: block;
   }
@@ -545,6 +594,22 @@ footer {
   }
   #research article.sacc img {
     height: 4rem;
+  }
+  #scientific-writing article .hero img {
+    width: 3rem;
+    position: absolute;
+    z-index: -1;
+  }
+  #scientific-writing article .hero #l-paper {
+    top: 30px;
+    left: 0;
+  }
+  #scientific-writing article .hero #r-paper {
+    top: 30px;
+    right: 0;
+  }
+  #teaching article .hero img {
+    width: 4rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

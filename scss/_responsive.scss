@@ -186,12 +186,12 @@
                 z-index: -1;
             }
 
-            #left-tree {
+            #l-tree {
                 left: 0;
                 top: 30px;
             }
 
-            #right-tree {
+            #r-tree {
                 right: 0;
                 top: 30px;
             }
@@ -231,6 +231,25 @@
 
         article {
 
+            .hero {
+
+                img {
+                    width: 4rem;
+                    position: absolute;
+                    z-index: -1;
+                }
+
+                #l-potion {
+                    top: 30px;
+                    left: 0;
+                }
+
+                #r-potion {
+                    top: 30px;
+                    right: 0;
+                }
+            }
+
             &.presentations {
 
                 .poster {
@@ -249,6 +268,44 @@
                 }
             }
 
+        }
+    }
+
+    #scientific-writing {
+
+        article {
+
+            .hero {
+
+                img {
+                    width: 3rem;
+                    position: absolute;
+                    z-index: -1;
+                }
+
+                #l-paper {
+                    top: 30px;
+                    left: 0;
+                }
+
+                #r-paper {
+                    top: 30px;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    #teaching {
+
+        article {
+
+            .hero {
+
+                img {
+                    width: 4rem;
+                }
+            }
         }
     }
 }

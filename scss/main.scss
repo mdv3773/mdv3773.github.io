@@ -117,6 +117,15 @@
             transform: translateX(0);
         }
 
+        .hero {
+            display: flex;
+            justify-content: space-around;
+
+            img {
+                width: 6rem;
+            }
+        }
+
         &.presentations {
 
             .poster {
@@ -172,13 +181,22 @@
         transform: translateX(-150%);
         @include transition-ease;
 
-        ol {
-            text-align: left;
-        }
-
         &.loaded {
 
             transform: translateX(0);
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-around;
+
+            img {
+                width: 6rem;
+            }
+        }
+
+        ol {
+            text-align: left;
         }
     }
 }
@@ -198,6 +216,15 @@
         &.loaded {
 
             transform: translateX(0);
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-around;
+
+            img {
+                width: 6rem;
+            }
         }
     }
 }
