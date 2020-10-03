@@ -1,0 +1,64 @@
+@mixin boxed($color, $display) {
+    background: $color;
+    margin: 50px auto auto auto;
+    max-width: 50vw;
+    text-align: center;
+    display: $display;
+    border-radius: 10px;
+}
+
+@mixin transition-ease {
+    transition: all ease-in-out;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+html, body {
+    text-shadow: 4px 3px 4px darkgrey;
+    font-size: 20px;
+    background: url(/dist/assets/img/Zion.jpg);
+    background-size: 100vw, 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+main {
+    margin-top: 5rem;
+    margin-bottom: 40px;
+}
+
+@mixin media-sm {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (max-width: 1600px) {
+        @content;
+    }
+}

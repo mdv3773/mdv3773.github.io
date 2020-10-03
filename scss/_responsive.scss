@@ -1,0 +1,311 @@
+//Lg screen must go first due to desktop first design
+
+@include media-lg {
+    
+    #main {
+
+        article {
+            max-width: 75vw;
+        }
+
+        .hero {
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            img {
+                width: 5rem;
+            }
+        }
+
+        .occupation {
+            display: block;
+        }
+
+        .background {
+            width: 100%;
+        }
+
+        .contacts {
+            text-align: inherit;
+        }
+    }
+
+    #research {
+
+        article {
+            max-width: 75vw;
+        }
+    }
+
+    #scientific-writing {
+
+        article {
+            max-width: 75vw;
+        }
+    }
+
+    #teaching {
+
+        article {
+            max-width: 75vw;
+        }
+    }
+}
+
+@include media-md {
+
+    #main {
+
+        article {
+            max-width: 100vw;
+        }
+
+        .hero {
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            img {
+                width: 5rem;
+            }
+        }
+
+        .occupation {
+            display: block;
+        }
+
+        .background {
+            width: 100%;
+        }
+
+        .contacts {
+            text-align: inherit;
+        }
+
+        .about {
+            display: flex;
+        }
+    }
+
+    #research {
+
+        article {
+            max-width: 100vw;
+        }
+    }
+
+    #scientific-writing {
+
+        article {
+            max-width: 100vw;
+        }
+    }
+
+    #teaching {
+
+        article {
+            max-width: 100vw;
+        }
+    }
+}
+
+@include media-sm {
+
+    html, body {
+        background: url(/dist/assets/img/charleston.jpg);
+        background-attachment: fixed;
+        background-size: 100vh;
+    }
+
+    .menu-btn {
+        visibility: visible;
+
+        &-burger {
+            background: #000;
+
+            &::before {
+                background: #000;
+            }
+
+            &::after {
+                background: #000;
+            }
+        }
+    }
+
+    .nav {
+        visibility: hidden;
+        width: 100vw;
+        opacity: 0.98;
+        font-size: 1.5rem;
+
+        &.open {
+            visibility: visible;
+            background: #211F1F;
+        }
+
+        .menu-nav {
+            display: flex;
+            flex-flow: column wrap;
+            height: 100vh;
+            transform: translateY(-100%);
+
+            &.open {
+                transform: translateY(0);
+            }
+
+            &-item {
+                padding: 50px 0 50px 0;
+                transform: translateX(100vw);
+                transition: all 0.3s ease-in-out;
+
+                &.open {
+                    transform: translateX(0);
+                    transition: all 0.4s ease-in-out;
+                }
+            }
+        }
+    }
+
+    @for $i from 1 through 6 {
+        .menu-nav:nth-child(#{$i}) {
+            transition-delay: ($i * 0.1s) + 0.15s;
+        }
+    }
+
+    #main {
+
+        .hero {
+
+            img {
+                width: 4rem;
+                position: absolute;
+                z-index: -1;
+            }
+
+            #l-tree {
+                left: 0;
+                top: 30px;
+            }
+
+            #r-tree {
+                right: 0;
+                top: 30px;
+            }
+        }
+
+        .about {
+            display: block;
+
+            .profile {
+                width: 100%;
+            }
+
+            &-me {
+                width: 96%;
+            }
+        }
+
+        .education {
+
+            img {
+                width: 4rem;
+            }
+
+            #l-branch {
+                left: -110px;
+                bottom: 40px;
+            }
+
+            #r-branch {
+                right: -110px;
+                bottom: 40px;
+            }
+        }
+    }
+
+    #research {
+
+        article {
+
+            .hero {
+
+                img {
+                    width: 4rem;
+                    position: absolute;
+                    z-index: -1;
+                }
+
+                #l-potion {
+                    top: 30px;
+                    left: 0;
+                }
+
+                #r-potion {
+                    top: 30px;
+                    right: 0;
+                }
+            }
+
+            &.presentations {
+
+                .poster {
+                    display: block;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+
+            &.sacc {
+            
+                img {
+                    height: 4rem;
+                }
+            }
+
+        }
+    }
+
+    #scientific-writing {
+
+        article {
+
+            .hero {
+
+                img {
+                    width: 3rem;
+                    position: absolute;
+                    z-index: -1;
+                }
+
+                #l-paper {
+                    top: 30px;
+                    left: 0;
+                }
+
+                #r-paper {
+                    top: 30px;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    #teaching {
+
+        article {
+
+            .hero {
+
+                img {
+                    width: 4rem;
+                }
+            }
+        }
+    }
+}
