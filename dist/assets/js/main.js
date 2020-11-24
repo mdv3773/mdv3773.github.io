@@ -8,11 +8,11 @@ let showMenu = false;
 let articles = document.querySelectorAll("article");
 
 let i = 0;
-let handler = setInterval(function () {
+let articleInterval = setInterval(function () {
     articles[i].classList.add("loaded");
     i++;
     if (i === articles.length) {
-        clearInterval(handler);
+        clearInterval(articleInterval);
     }
 }, 300);
 
