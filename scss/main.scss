@@ -143,6 +143,10 @@
 
         &.sacc {
 
+            div:first-of-type {
+                display: flex;
+            }
+
             p {
                 text-align: justify;
                 margin: 0 1rem 0 2rem;
@@ -151,6 +155,7 @@
 
             img {
                 height: 15rem;
+                border-radius: 50%;
             }
         }
 

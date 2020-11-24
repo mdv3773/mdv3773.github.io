@@ -301,6 +301,12 @@ footer {
   height: 8rem;
 }
 
+#research article.sacc div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #research article.sacc p {
   text-align: justify;
   margin: 0 1rem 0 2rem;
@@ -309,6 +315,7 @@ footer {
 
 #research article.sacc img {
   height: 15rem;
+  border-radius: 50%;
 }
 
 #research article .two-imgs {
@@ -594,8 +601,11 @@ footer {
   #research article.presentations .poster p {
     margin: 0;
   }
+  #research article.sacc div:first-of-type {
+    display: block;
+  }
   #research article.sacc img {
-    height: 4rem;
+    height: 14rem;
   }
   #scientific-writing article .hero img {
     width: 3rem;

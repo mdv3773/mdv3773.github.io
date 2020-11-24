@@ -262,9 +262,13 @@
             }
 
             &.sacc {
-            
+
+                div:first-of-type {
+                    display: block;
+                }
+
                 img {
-                    height: 4rem;
+                    height: 14rem;
                 }
             }
 
